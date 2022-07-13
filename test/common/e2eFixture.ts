@@ -12,7 +12,7 @@ function initE2eFixture() {
     }).compile();
 
     app = moduleFixture.createNestApplication();
-    app.setGlobalPrefix('api/v0');
+    app.setGlobalPrefix('api/v1');
     await app.init();
   });
 
