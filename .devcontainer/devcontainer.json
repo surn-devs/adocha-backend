@@ -1,0 +1,32 @@
+{
+    "name": "adocha-backend-dev",
+    "dockerFile": "dev.Dockerfile",
+    "appPort": ["3000:3000"],
+    "postCreateCommand": "npm i",
+    "settings": {
+        "[javascript]": {
+            "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+            "editor.tabSize": 2
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.tabSize": 2
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        },
+        "eslint.format.enable": true,
+        "eslint.validate": ["javascript", "typescript"],
+        "eslint.packageManager": "npm",
+        "files.insertFinalNewline": true,
+        "files.eol": "\n"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ]
+}
