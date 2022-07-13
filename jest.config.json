@@ -1,0 +1,17 @@
+{
+  "projects": [
+    {
+      "verbose": true,
+      "preset": "ts-jest",
+      "collectCoverageFrom": [
+        "**/*.(t|j)s"
+      ],
+      "coverageDirectory": "coverage",
+      "resetMocks": true,
+      "passWithNoTests": true,
+      "displayName": "e2e",
+      "testRegex": "\\.spec\\.[jt]s$",
+      "roots": ["test"]
+    }
+  ]
+}
