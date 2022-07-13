@@ -3,8 +3,10 @@
     {
       "verbose": true,
       "preset": "ts-jest",
-      "collectCoverageFrom": [
-        "**/*.(t|j)s"
+      "collectCoverageFrom": ["**/*.(t|j)s"],
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/",
+        "<rootDir>/test/"
       ],
       "coverageDirectory": "coverage",
       "resetMocks": true,
