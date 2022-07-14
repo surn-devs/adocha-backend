@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "verbose": true,
+      "preset": "ts-jest",
+      "collectCoverageFrom": ["**/*.(t|j)s"],
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/",
+        "<rootDir>/test/"
+      ],
+      "coverageDirectory": "coverage",
+      "resetMocks": true,
+      "passWithNoTests": true,
+      "displayName": "e2e",
+      "testRegex": "\\.spec\\.[jt]s$",
+      "roots": ["test"]
+    }
+  ]
+}
